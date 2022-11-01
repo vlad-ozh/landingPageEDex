@@ -5,10 +5,7 @@
 ### Steps to deploy the app: </br>
 - git checkout main </br>
 - git pull origin main </br>
-- git checkout gh-pages </br>
-- git rebase main </br>
-- git push --force origin gh-pages </br>
-- `nvm use && npm run deploy` </br>
+- `npm run deploy` </br>
 ***
 ### Available Scripts </br>
 In the project directory, you can run: </br>
