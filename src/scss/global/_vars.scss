@@ -1,0 +1,68 @@
+$secondary-color: #FFC27A;
+$text-gray-color: #6D737A;
+$heading-gray-color: #1B1D1F;
+
+
+%signup-button {
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: linear-gradient(0deg, #ffa337 0%, $secondary-color 100%);
+  transition: all .2s;
+  z-index: 5;
+
+  &:hover {
+    color: #e9e9e9;
+    background: linear-gradient(0deg, $secondary-color 0%, #FFA337 100%);
+  }
+}
+
+%swiper-size {
+  max-width: 1344;
+  padding: 12px;
+  margin: 0 auto 88px;
+
+  @media screen and (max-width: 1300px) {
+    max-width: 1008px;
+  }
+  @media screen and (max-width: 1000px) {
+    max-width: 672px;
+  }
+  @media screen and (max-width: 685px) {
+    max-width: 336px;
+    margin-bottom: 38px;
+  }
+}
+
+%section-title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 72px;
+  color: $heading-gray-color;
+  padding: 100px 0 16px;
+  text-transform: capitalize;
+  
+  & span {
+    color: #3461FD;
+  }
+
+  @media screen and (max-width: 1000px) {
+    font-size: 48px;
+    line-height: 64px;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 32px;
+    line-height: 42px;
+    padding-top: 50px;
+  }
+}
+
+%section-text {
+  color: $text-gray-color;
+  margin-bottom: 50px;
+  
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

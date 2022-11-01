@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__background-triangle"></div>
+        <a class="header__logo" href="#">
+          <i class="icon-header-logo"><i class="path1"></i><i class="path2"></i></i>
+        </a>
+        <div class="header__menu-blur"></div>
+        <div class="header__top-inner">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  About
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  Course
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  Blog
+                </a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__entry">
+            <a class="header__login" href="#">
+              <i class="icon-lock-login"></i>
+              Login
+            </a>
+            <a class="header__signup" href="#">
+              Sign up for Free
+            </a>
+          </div>
+        </div>
+        <button class="menu-burger-btn"></button>
+      </div>
+
+      <div class="header__content">
+        <div class="header__description">
+          <h3 class="header__motivation">START TO SUCCESS</h3>
+          <h1 class="header__title">
+            Access To <span>5000+</span> Courses
+            from <span>300</span> Instructors <br>
+            & Institutions
+          </h1>
+          <p class="header__text">
+            Various versions have evolved over the years, sometimes by accident.
+          </p>
+          <form class="header__form">
+            <input class="header__input" type="text" placeholder="What do want to learn?">
+            <button class="header__input-btn">
+              <i class="icon-search-icon"></i>
+            </button>
+          </form>
+        </div>
+        <div class="header__image">
+          <img src="./images/header-image.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <main class="main">
+      <div class="button-up button-up_hide">
+        <span class="icon-arrow-up"></span>
+      </div>
+      <section class="statistics">
+        <div class="container">
+          <ul class="statistics__list">
+            <li class="statistics__item">
+              <div class="statistics__icon">
+                <i class="icon-instructor"></i>
+              </div>
+              <div class="statistics__info">
+                <h3 class="statistics__amount">300</h3>
+                <p class="statistics__text">Instructor</p>
+              </div>
+            </li>
+            <li class="statistics__item">
+              <div class="statistics__icon">
+                <i class="icon-student"></i>
+              </div>
+              <div class="statistics__info">
+                <h3 class="statistics__amount">20,000+</h3>
+                <p class="statistics__text">Student</p>
+              </div>
+            </li>
+            <li class="statistics__item">
+              <div class="statistics__icon">
+                <i class="icon-video"></i>
+              </div>
+              <div class="statistics__info">
+                <h3 class="statistics__amount">10,000+</h3>
+                <p class="statistics__text">Video</p>
+              </div>
+            </li>
+            <li class="statistics__item">
+              <div class="statistics__icon">
+                <i class="icon-users"></i>
+              </div>
+              <div class="statistics__info">
+                <h3 class="statistics__amount">100,000+</h3>
+                <p class="statistics__text">User's</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="popular-course">
+        <div class="container">
+          <h1 class="popular-course__title" data-aos="fade-up" data-aos-duration="600">
+            Most <span>Popular Course</span>
+          </h1>
+          <p class="popular-course__text" data-aos="fade-up" data-aos-duration="800">
+            Various versions have evolved over the years, sometimes by accident.
+          </p>
+          <div class="popular-course__swiper-inner">
+        
+            <div class="popular-course__swiper swiper">
+              <div class=" popular-course__items swiper-wrapper">
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    HTML
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-01.png" alt="">
+                  <h3 class="popular-course__item-title">Various versions have evolved daf</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <a class="popular-course__item-rating-link" href="#">(15)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    Design
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-02.png" alt="">
+                  <h3 class="popular-course__item-title">Hello world</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <a class="popular-course__item-rating-link" href="#">(20)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    Business
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-03.png" alt="">
+                  <h3 class="popular-course__item-title">Hello world</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star inactive"></i>
+                    <a class="popular-course__item-rating-link" href="#">(102)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    Business
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-04.png" alt="">
+                  <h3 class="popular-course__item-title">Hello world</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star inactive"></i>
+                    <a class="popular-course__item-rating-link" href="#">(102)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    HTML
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-04.png" alt="">
+                  <h3 class="popular-course__item-title">Hello world</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <a class="popular-course__item-rating-link" href="#">(15)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    HTML
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-04.png" alt="">
+                  <h3 class="popular-course__item-title">Hello world</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <a class="popular-course__item-rating-link" href="#">(15)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="popular-course__item swiper-slide">
+                  <div class="popular-course__item-category">
+                    HTML
+                  </div>
+                  <img class="popular-course__item-img" src="./images/popular-course-04.png" alt="">
+                  <h3 class="popular-course__item-title">Hello world</h3>
+                  <div class="popular-course__item-rating">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <a class="popular-course__item-rating-link" href="#">(15)</a>
+                  </div>
+                  <div class="popular-course__item-bottom">
+                    <div class="popular-course__item-price">
+                      $500
+                    </div>
+                    <a class="popular-course__item-link" href="#">
+                      <i class="icon-arrow-up-right"></i>
+                    </a>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-popular-course"></div>
+            <div class="swiper-button-next swiper-button-next-popular-course"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-category">
+        <div class="container">
+          <h1 class="popular-category__title" data-aos="zoom-in-right" data-aos-duration="600">
+            Most <span>Popular Category</span>
+          </h1>
+          <p class="popular-category__text" data-aos="zoom-in-up" data-aos-duration="700">
+            Various versions have evolved over the years, sometimes by accident.
+          </p>
+
+          <div class="popular-category__items">
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-01"></i>
+                <h3 class="popular-category__item-title">
+                  Design
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-02"></i>
+                <h3 class="popular-category__item-title">
+                  Development
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-03"></i>
+                <h3 class="popular-category__item-title">
+                  Marketing
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-04"></i>
+                <h3 class="popular-category__item-title">
+                  Business
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-05"></i>
+                <h3 class="popular-category__item-title">
+                  Lifestyle
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-06"></i>
+                <h3 class="popular-category__item-title">
+                  Photography
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-07"></i>
+                <h3 class="popular-category__item-title">
+                  Music
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-08"></i>
+                <h3 class="popular-category__item-title">
+                  Data Science
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-09"></i>
+                <h3 class="popular-category__item-title">
+                  Personal Develop
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-10"></i>
+                <h3 class="popular-category__item-title">
+                  Helth & Fitness
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-11"></i>
+                <h3 class="popular-category__item-title">
+                  Finance
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            <a class="popular-category__item" href="#">
+              <div class="popular-category__item-preview">
+                <i class="icon-popular-category-12"></i>
+                <h3 class="popular-category__item-title">
+                  Teaching
+                </h3>
+              </div>
+              <div class="popular-category__item-link">
+                <i class="icon-arrow-up-right"></i>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="instructors">
+        <div class="container">
+          <h1 class="instructors__title" data-aos="zoom-in-down" data-aos-duration="600">
+            Our Best <span>Instructor</span>
+          </h1>
+          <p class="instructors__text" data-aos="zoom-in-right" data-aos-duration="700">
+            Various versions have evolved over the years, sometimes by accident.
+          </p>
+
+          <div class="instructors__swiper-inner">
+            <div class="instructors__swiper swiper">
+              <div class=" instructors__items swiper-wrapper">
+
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-01.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    UI-UX Design Expart
+                  </p>
+                </div>
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-02.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    Social Media Expart
+                  </p>
+                </div>
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-03.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    Business Idea Expart
+                  </p>
+                </div>
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-04.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    Photograpy Expart
+                  </p>
+                </div>
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-01.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    Social Media Expart
+                  </p>
+                </div>
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-02.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    Social Media Expart
+                  </p>
+                </div>
+                <div class="instructors__item swiper-slide">
+                  <img class="instructors__item-img" src="./images/instructor-03.png" alt="">
+                  <h3 class="instructors__item-title">Jacob Jones</h3>
+                  <p class="instructors__item-text">
+                    Social Media Expart
+                  </p>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-instructors"></div>
+            <div class="swiper-button-next swiper-button-next-instructors"></div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container">
+          <h1 class="feedback__title" data-aos="fade-down" data-aos-duration="600">
+            Student <span>Feedback</span>
+          </h1>
+          <p class="feedback__text" data-aos="fade-up" data-aos-duration="700">
+            Various versions have evolved over the years, sometimes by accident.
+          </p>
+
+          <div class="feedback__swiper-inner">
+            <div class="feedback__swiper swiper">
+              <div class=" feedback__items swiper-wrapper">
+
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__item-top">
+                    <div class="feedback__item-info">
+                      <img class="feedback__item-preview-img" src="./images/feedback-01.png" alt="">
+                      <div class="feedback__item-title">
+                        <h3 class="feedback__item-name">Guy Hawkins</h3>
+                        <p class="feedback__item-category">
+                          UI-UX Design Expart
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon-feedback-img"></i>
+                  </div>
+                  <div class="feedback__item-content">
+                    <p>
+                      Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__item-top">
+                    <div class="feedback__item-info">
+                      <img class="feedback__item-preview-img" src="./images/feedback-02.png" alt="">
+                      <div class="feedback__item-title">
+                        <h3 class="feedback__item-name">Guy Hawkins</h3>
+                        <p class="feedback__item-category">
+                          UI-UX Design Expart
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon-feedback-img"></i>
+                  </div>
+                  <div class="feedback__item-content">
+                    <p>
+                      Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__item-top">
+                    <div class="feedback__item-info">
+                      <img class="feedback__item-preview-img" src="./images/feedback-03.png" alt="">
+                      <div class="feedback__item-title">
+                        <h3 class="feedback__item-name">Guy Hawkins</h3>
+                        <p class="feedback__item-category">
+                          UI-UX Design Expart
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon-feedback-img"></i>
+                  </div>
+                  <div class="feedback__item-content">
+                    <p>
+                      Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__item-top">
+                    <div class="feedback__item-info">
+                      <img class="feedback__item-preview-img" src="./images/feedback-03.png" alt="">
+                      <div class="feedback__item-title">
+                        <h3 class="feedback__item-name">Guy Hawkins</h3>
+                        <p class="feedback__item-category">
+                          UI-UX Design Expart
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon-feedback-img"></i>
+                  </div>
+                  <div class="feedback__item-content">
+                    <p>
+                      Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                    </p>
+                  </div>
+                </div>
+                <div class="feedback__item swiper-slide">
+                  <div class="feedback__item-top">
+                    <div class="feedback__item-info">
+                      <img class="feedback__item-preview-img" src="./images/feedback-03.png" alt="">
+                      <div class="feedback__item-title">
+                        <h3 class="feedback__item-name">Guy Hawkins</h3>
+                        <p class="feedback__item-category">
+                          UI-UX Design Expart
+                        </p>
+                      </div>
+                    </div>
+                    <i class="icon-feedback-img"></i>
+                  </div>
+                  <div class="feedback__item-content">
+                    <p>
+                      Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev swiper-button-prev-feedback"></div>
+            <div class="swiper-button-next swiper-button-next-feedback"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="join">
+        <div class="container">
+          <div class="join__inner">
+            <img class="join__img" src="./images/join-img.png" alt="">
+            <div class="join__content">
+              <h2 class="join__title" data-aos="zoom-in-right" data-aos-duration="600">
+                Join <span>World's largest</span> learning platform today
+              </h2>
+              <h3 class="join__pretitle" data-aos="zoom-in-up" data-aos-duration="700">
+                Start learning by registering for free
+              </h3>
+              <p class="join__text" data-aos="zoom-in-up" data-aos-duration="800">
+                Ut pharetra ipsum nec leo blandit, sit amet tincidunt eros pharetra. Nam sed imperdiet turpis. In hac habitasse platea dictumst. 
+              </p>
+              <p class="join__text" data-aos="zoom-in-up" data-aos-duration="800">
+                Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+              </p>
+              <button class="join__button">
+                Sign up for Free
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__contact">
+            <i class="icon-header-logo"><i class="path1"></i><i class="path2"></i></i>
+            <h3 class="footer__contact-title">
+              Contact Us
+            </h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                Call: <a href="tel:123 400 123">+123 400 123</a>
+              </li>
+              <li class="footer__contact-item">
+                Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis.
+              </li>
+              <li class="footer__contact-item">
+                Email: <a href="mailto:example@mail.com">example@mail.com</a>
+              </li>
+              <li class="footer__contact-item">
+                <ul class="footer__contact-messengers">
+                  <li class="footer__contact-messenger">
+                    <a class="footer__contact-messenger-link" href="#">
+                      <i class="icon-facebook-logo"></i>
+                    </a>
+                  </li>
+                  <li class="footer__contact-messenger">
+                    <a class="footer__contact-messenger-link" href="#">
+                      <i class="icon-ball-logo"></i>
+                    </a>
+                  </li>
+                  <li class="footer__contact-messenger">
+                    <a class="footer__contact-messenger-link" href="#">
+                      <i class="icon-linkedin-logo"></i>
+                    </a>
+                  </li>
+                  <li class="footer__contact-messenger">
+                    <a class="footer__contact-messenger-link" href="#">
+                      <i class="icon-instagram-logo"></i>
+                    </a>
+                  </li>
+                  <li class="footer__contact-messenger">
+                    <a class="footer__contact-messenger-link" href="#">
+                      <i class="icon-be-logo"></i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__explore">
+            <h3 class="footer__explore-title">
+              Explore
+            </h3>
+            <ul class="footer__explore-list">
+              <li class="footer__explore-item">
+                <a href="#">Home</a>
+              </li>
+              <li class="footer__explore-item">
+                <a href="#">About</a>
+              </li>
+              <li class="footer__explore-item">
+                <a href="#">Course</a>
+              </li>
+              <li class="footer__explore-item">
+                <a href="#">Blog</a>
+              </li>
+              <li class="footer__explore-item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__category">
+            <h3 class="footer__category-title">
+              Category
+            </h3>
+            <ul class="footer__category-list">
+              <li class="footer__category-item">
+                <a href="#">Design</a>
+              </li>
+              <li class="footer__category-item">
+                <a href="#">Development</a>
+              </li>
+              <li class="footer__category-item">
+                <a href="#">Marketing</a>
+              </li>
+              <li class="footer__category-item">
+                <a href="#">Business</a>
+              </li>
+              <li class="footer__category-item">
+                <a href="#">Lifestyle</a>
+              </li>
+              <li class="footer__category-item">
+                <a href="#">Photography</a>
+              </li>
+              <li class="footer__category-item">
+                <a href="#">Music</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__subscribe">
+            <h3 class="footer__subscribe-title">
+              Subscribe
+            </h3>
+            <p class="footer__subscribe-text">
+              Lorem Ipsum has been them an industry printer took a galley make book.
+            </p>
+            <form class="footer__subscribe-form" action="" >
+              <input class="footer__subscribe-input" type="email" placeholder="Email here">
+              <button class="footer__subscribe-btn">Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

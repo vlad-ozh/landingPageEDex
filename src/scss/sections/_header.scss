@@ -1,0 +1,339 @@
+.header {
+  background-color: #6176F7;
+  height: 100vh;
+  min-height: 750px;
+  
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    
+    @media screen and (max-width: 525px) {
+      padding-top: 12px;
+    }
+  }
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 83%;
+
+    @media screen and (max-width: 1125px) {
+      position: fixed;
+      background-color: #070d44e8;
+      display: block;
+      right: -320px;
+      top: 0;
+      bottom: 0px;
+      transition: all .5s;
+      max-width: 320px;
+      width: 100%;
+      z-index: 50;
+      box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, .5);
+      overflow: auto;
+      
+      &--active {
+        right: 0px;
+      }
+    }
+  }
+  &__background-triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .05;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 40vh 55vw 0 0;
+    border-color: #fff transparent transparent transparent;
+  }
+  &__logo {
+    height: 40px;
+    position: relative;
+    top: -23px;
+    z-index: 5;
+  }
+  &__menu {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__menu-blur {
+    display: none;
+    z-index: 5;
+
+    @media screen and (max-width: 1100px) {      
+      &--active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        backdrop-filter: blur(3px);
+      }
+    }
+  }
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1100px) {
+      margin: 100px 0 50px;
+      display: block;
+      font-size: 22px;
+      z-index: 70;
+    }
+  }
+  &__menu-item {
+    padding: 12px 24px;
+    z-index: 3;
+}
+  &__menu-link {
+    transition: all .3s;
+    text-transform: capitalize;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  &__entry {
+    display: flex;
+    color: #fff;
+
+    @media screen and (max-width: 1100px) {
+      display: block;
+      z-index: 70;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+  }
+  &__login {
+    display: flex;
+    padding: 12px 24px;
+    transition: all .3s;
+    text-transform: capitalize;
+    z-index: 3;
+
+    &:hover {
+      color: $secondary-color;
+      & i::before {
+        color: $secondary-color;
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+  }
+  &__signup {
+    @extend %signup-button;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    color: #fff;
+    max-width: 685px;
+    width: 100%;
+    margin-top: 150px;
+    z-index: 3;
+
+    @media screen and (max-width: 1217px) {
+      margin: 150px auto 0;
+    }
+  }
+  &__motivation {
+    color: $secondary-color;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 525px) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+  &__title {
+    position: relative;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 72px;
+    margin-bottom: 24px;
+
+    & span {
+      position: relative;
+    }
+    & span:nth-child(1)::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 13px;
+      top: 57px;
+      background: url(../../images/underline-1.svg) center center / contain no-repeat;
+
+      @media screen and (max-width: 1430px) {
+        top: 50px;
+      }
+      @media screen and (max-width: 1330px) {
+        top: 45px;
+      }
+      @media screen and (max-width: 1260px) {
+        top: 36px;
+      }
+      @media screen and (max-width: 1217px) {
+        top: 57px;
+      }
+      @media screen and (max-width: 830px) {
+        top: 50px;
+      }
+      @media screen and (max-width: 731px) {
+        top: 43px;
+      }
+      @media screen and (max-width: 660px) {
+        top: 36px;
+      }
+      @media screen and (max-width: 470px) {
+        top: 28px;
+      }
+      @media screen and (max-width: 423px) {
+        top: 27px;
+      }
+      @media screen and (max-width: 375px) {
+        top: 21px;
+      }
+    }
+    & span:nth-child(2)::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 13px;
+      top: 57px;
+      background: url(../../images/underline-2.svg) center center / contain no-repeat;
+
+      @media screen and (max-width: 1430px) {
+        top: 50px;
+      }
+      @media screen and (max-width: 1330px) {
+        top: 45px;
+      }
+      @media screen and (max-width: 1260px) {
+        top: 36px;
+      }
+      @media screen and (max-width: 1217px) {
+        top: 57px;
+      }
+      @media screen and (max-width: 830px) {
+        top: 50px;
+      }
+      @media screen and (max-width: 731px) {
+        top: 43px;
+      }
+      @media screen and (max-width: 660px) {
+        top: 36px;
+      }
+      @media screen and (max-width: 470px) {
+        top: 28px;
+      }
+      @media screen and (max-width: 423px) {
+        top: 26px;
+      }
+      @media screen and (max-width: 375px) {
+        top: 21px;
+      }
+    }
+
+    @media screen and (max-width: 1430px) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+    @media screen and (max-width: 1330px) {
+      font-size: 42px;
+      line-height: 58px;
+    }
+    @media screen and (max-width: 1260px) {
+      font-size: 38px;
+      line-height: 54px;
+    }
+    @media screen and (max-width: 1217px) {
+      font-size: 56px;
+      line-height: 72px;
+    }
+    @media screen and (max-width: 830px) {
+      font-size: 48px;
+      line-height: 64px;
+    }
+    @media screen and (max-width: 731px) {
+      font-size: 42px;
+      line-height: 58px;
+    }
+    @media screen and (max-width: 660px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    @media screen and (max-width: 470px) {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    @media screen and (max-width: 423px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  &__text {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 525px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  &__form {
+    position: relative;
+    z-index: 3;
+  }
+  &__input {
+    box-sizing: border-box;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 24px 75px 24px 32px;
+    font-size: 16px;
+    width: 100%;
+  }
+  &__input-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 0;
+    border-radius: 50%;
+    padding: 24px;
+    background: linear-gradient(0deg, #FFA337 0%, $secondary-color  100%);
+
+    &:hover {
+      color: #e9e9e9;
+      background: linear-gradient(0deg, $secondary-color 0%, #ffa337 100%);
+    }
+  }
+  &__image {
+    min-width: 600px;
+    margin-top: -60px;
+
+    @media screen and (max-width: 1217px) {
+      display: none;
+    }
+  }
+}
+

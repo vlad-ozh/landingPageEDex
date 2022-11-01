@@ -1,0 +1,91 @@
+.popular-course {
+  &__title {
+    @extend %section-title;
+  }
+  &__text {
+    @extend %section-text;
+  }
+  &__swiper-inner {
+    position: relative;
+  }
+  &__swiper {
+    @extend %swiper-size;
+  }
+  &__item {
+    border-radius: 24px;
+    box-shadow: -3px 5px 10px 2px  rgba(0, 0, 0, .1);
+    padding: 16px;
+    max-width: 312px;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  &__item-category {
+    position: absolute;
+    text-transform: capitalize;
+    top: 23px;
+    left: 24px;
+    padding: 6px 13px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, .6);
+  }
+  &__item-img {
+    border-radius: 15px;
+    margin-bottom: 16px;
+    max-width: 100%;
+  }
+  &__item-title {
+    color: #363A3D;
+    font-weight: 500;
+    margin-bottom: 16px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__item-rating {
+    display: flex;
+    align-items: center;
+
+    & .inactive::before {
+      color: #E7E9EB;
+    }
+  }
+  &__item-rating-link {
+    margin-left: 11px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #E7E9EB;
+    margin: 16px -16px 0;
+    padding: 16px 16px 0;
+  }
+  &__item-price {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__item-link {
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(255, 163, 55, 0.12) 0%, rgba(255, 194, 122, 0.12) 100%);
+    transition: all .2s ease-in-out;
+    line-height: 0;
+    z-index: 20;
+
+    &:hover {
+      background: linear-gradient(0deg, #FFC27A 0%, #FFA337 100%);
+      & i:before {
+        color: #fff;
+      }
+    }
+  }
+}

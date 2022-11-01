@@ -1,0 +1,61 @@
+.join {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 0 95px;
+    @media screen and (max-width: 1210px) {
+      justify-content: center;
+      padding: 100px 0;
+    }
+    @media screen and (max-width: 600px) {
+      padding: 50px 0;
+    }
+  }
+  &__img {
+    width: 100%;
+
+    @media screen and (max-width: 1210px) {
+      display: none;
+    }
+  }
+  &__content {
+    margin: auto 0;
+    max-width: 650px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: $heading-gray-color;
+    margin-bottom: 24px;
+
+    & span {
+      color: #3461FD;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
+  &__pretitle {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    color: $heading-gray-color;
+
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__text {
+    color: $text-gray-color;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__button {
+    margin-top: 37px;
+    @extend %signup-button;
+  }
+}

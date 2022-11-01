@@ -1,0 +1,52 @@
+.swiper-button-prev, 
+.swiper-button-next {
+  top: 45%;
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  transition: all .3s;
+  padding-top: 3.5px;
+  width: 44px;
+  height: 44px;
+  box-shadow: -2px 1px 5px 1px  rgba(0, 0, 0, .1);
+  
+  &::after {
+    font-size: 15px;
+  }
+  
+  &:hover {
+    color: #fff;
+    background: linear-gradient(0deg, #ffa337 0%, $secondary-color 100%);
+  }
+}
+.swiper-button-next {
+  position: absolute;
+  right: -60px;
+  padding-left: 3px;
+
+  @media screen and (max-width: 1375px) {
+    right: -45px;
+  }
+  @media screen and (max-width: 685px) {
+    display: none;
+  }
+}
+.swiper-button-prev {
+  padding-right: 3px;
+  left: -60px;
+
+  @media screen and (max-width: 1375px) {
+    left: -45px;
+  }
+  @media screen and (max-width: 685px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+.swiper-pagination-bullet-active {
+  background-color: $secondary-color;
+}
