@@ -1,5 +1,5 @@
 
-### Link to the app: https://vlad-ozh.github.io/lendingCoffee/ </br>
+### Link to the app: https://vlad-ozh.github.io/landingPageEDex/ </br>
 ### Run app: `nvm use && npm i && npm start` </br>
 
 ### Steps to deploy the app: </br>

@@ -57,11 +57,11 @@ const images = () => {
         ]
       })
     ]))
-    .pipe(dest('dist/images'))
+    .pipe(dest('build/images'))
 }
 
-const cleanDist = () => {
-  return del('dist')
+const cleanBuild = () => {
+  return del('build')
 }
 
 const build = () => {
@@ -71,7 +71,7 @@ const build = () => {
     'src/js/main.min.js',
     'src/*.html'
   ], {base: 'src'})
-    .pipe(dest('dist'))
+    .pipe(dest('build'))
 }
 
 const watching = () => {
@@ -85,7 +85,7 @@ exports.watching = watching;
 exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
-exports.cleanDist = cleanDist;
+exports.cleanBuild = cleanBuild;
 
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanBuild, images, build);
 exports.default = parallel(styles, scripts, browsersync, watching);
